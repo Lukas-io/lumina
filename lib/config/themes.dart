@@ -5,6 +5,7 @@ const String kFontFamily = 'Rotunda';
 const Color kLightLabelColor = Color(0XFF5F6561);
 const Color kLabelColor = Color(0XFFF6F6F6);
 const Color kBackgroundColor = Color(0XFF111111);
+// const String kApikey = "b7ba817db0bcafbaf9eee9141011fc7a";
 
 // Define text styles
 const TextStyle kDisplayLarge = TextStyle(
