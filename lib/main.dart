@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
       theme: kThemeData,
       home: const Home(),
       // onGenerateRoute: AppRoutes.onGenerateRoutes,
+
       debugShowCheckedModeBanner: false,
     );
   }

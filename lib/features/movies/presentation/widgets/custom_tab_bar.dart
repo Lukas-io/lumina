@@ -6,8 +6,7 @@ class CustomTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TabBar(
-      padding: EdgeInsets.only(top: 28.0),
-      tabAlignment: TabAlignment.start,
+      padding: EdgeInsets.only( left: 0.0),
       labelPadding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
       isScrollable: true,
       tabs: [

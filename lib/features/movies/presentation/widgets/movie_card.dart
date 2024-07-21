@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:lumina/core/constants/constants.dart';
@@ -10,6 +12,8 @@ class MovieCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         _Image(
           wSize: kLargePosterSize,
@@ -31,15 +35,20 @@ class _Image extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String imageUrl = posterUrl ?? backdropUrl!;
+    double height = 114.0;
 
     return CachedNetworkImage(
       imageUrl: imageUrl,
-      height: 300.0,
-      width: 363 / 545 * 300.0,
-      imageBuilder: (context, imageProvider) => Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28.0),
-          image: DecorationImage(image: imageProvider),
+      height: height,
+      width: 363 / 545 * height,
+      imageBuilder: (context, imageProvider) => InkWell(
+        onTap: (){},
+        child: Container(
+
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12.0),
+            image: DecorationImage(image: imageProvider),
+          ),
         ),
       ),
       errorWidget: (context, url, error) => const Icon(Icons.error),

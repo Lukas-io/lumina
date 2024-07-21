@@ -1,4 +1,6 @@
-const String kApikey = "YOUR-API-KEY";
+// const String kApikey = "YOUR-API-KEY";
+const String kApikey = "b7ba817db0bcafbaf9eee9141011fc7a";
+
 const String kBaseApiUrl = "https://api.themoviedb.org/3";
 
 const String kAnimationGenre = "16";

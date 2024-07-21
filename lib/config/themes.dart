@@ -5,7 +5,6 @@ const String kFontFamily = 'Rotunda';
 const Color kLightLabelColor = Color(0XFF5F6561);
 const Color kLabelColor = Color(0XFFF6F6F6);
 const Color kBackgroundColor = Color(0XFF111111);
-// const String kApikey = "b7ba817db0bcafbaf9eee9141011fc7a";
 
 // Define text styles
 const TextStyle kDisplayLarge = TextStyle(
@@ -22,6 +21,7 @@ const TextStyle kTabLabelStyle =
     TextStyle(fontFamily: kFontFamily, fontWeight: FontWeight.w400);
 // Define ThemeData
 ThemeData kThemeData = ThemeData(
+  // useMaterial3: true,
   brightness: Brightness.dark,
   scaffoldBackgroundColor: kBackgroundColor,
   textTheme: const TextTheme(
@@ -35,7 +35,5 @@ ThemeData kThemeData = ThemeData(
     labelColor: kLabelColor,
     unselectedLabelColor: kLightLabelColor,
     indicator: BoxDecoration(),
-    tabAlignment: TabAlignment.start,
   ),
-  // Define other theme properties like button themes, app bars, etc.
 );
